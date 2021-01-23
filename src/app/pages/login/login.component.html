@@ -1,0 +1,12 @@
+<form>
+    <label>
+        Name:
+        <input type="text" [formControl]="LoginName">
+    </label>
+    <label>
+        Password:
+        <input type="password" [formControl]="LoginPassword">
+    </label>
+    <button type="button" (click)="Login()">Login</button>
+    <p *ngIf="LoginMessage != ''">{{ LoginMessage }}</p>
+</form>
